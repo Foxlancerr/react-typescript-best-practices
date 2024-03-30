@@ -1,6 +1,7 @@
 import React, { ComponentProps, HtmlHTMLAttributes } from "react";
 
 // way1 to solve this probles
+// prefer way to used this
 const Button1 = ({ className, ...rest }: ComponentProps<"button">) => {
   return (
     <button {...rest} className={`default-classname ${className}`}>
