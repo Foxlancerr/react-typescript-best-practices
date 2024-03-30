@@ -1,8 +1,5 @@
 import React from "react";
-import Parent from "./Tasks/01-components/04-typing-onclick-solution";
-
-
-
+import Parent from "./Tasks/01-components/05-html-props-solution";
 
 const App = () => {
   return (

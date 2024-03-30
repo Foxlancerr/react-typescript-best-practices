@@ -3,7 +3,7 @@ import React from "react";
 interface ButtonProps {
   customStyle: string;
   children: React.ReactNode;
-  onClick: () => void;
+  onClick: React.MouseEventHandler;
 }
 
 const Button = ({ children, customStyle, onClick }: ButtonProps) => {
