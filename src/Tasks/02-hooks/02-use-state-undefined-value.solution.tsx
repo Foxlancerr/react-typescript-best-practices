@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "../../helpers/type-utils";
 
 interface IStudent {
   id: number;
@@ -14,7 +14,7 @@ const fetchData = () => {
 };
 
 const Parent = () => {
-  const [record, setRecord] = useState<IStudent[]>();
+  const [record, setRecord] = useState<IStudent[] | undefined>(undefined);
 
   useEffect(() => {
     fetchData().then((val) => {
@@ -23,14 +23,17 @@ const Parent = () => {
     console.log("run");
   }, []);
 
-  return record && ( record.map((item) => (
-    <div key={item.id}>
-      <h1>Id: {item.id}</h1>
-      <p>name: {item.name}</p>
-    </div>
-  )));
+  return (
+    record &&
+    record.map((item) => (
+      <div key={item.id}>
+        <h1>Id: {item.id}</h1>
+        <p>name: {item.name}</p>
+      </div>
+    ))
+  );
 
-  type test = [Expect<Equal<typeof record, IStudent | undefined>>];
+  type test = [Expect<Equal<typeof record, IStudent[] | undefined>>];
 };
 
 export default Parent;
