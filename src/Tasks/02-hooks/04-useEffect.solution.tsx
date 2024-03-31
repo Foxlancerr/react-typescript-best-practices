@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 
-export const useTimeout = (timerMs: number) => {
-  const [count, setCount] = useState();
+const useTimeout = (timerMs: number) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setCount(10);
+      console.log("done");
     }, timerMs);
     return () => {
-      setCount(20);
       clearTimeout(timeout);
     };
   }, [timerMs]);
@@ -31,6 +29,7 @@ const CounterApp = () => {
     setCount(count + 1);
   };
 
+  useTimeout(3000);
   return (
     <div className="flex justify-center items-center flex-col gap-2">
       <h2>Counter App</h2>
