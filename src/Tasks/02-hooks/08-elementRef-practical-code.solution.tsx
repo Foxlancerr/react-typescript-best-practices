@@ -50,7 +50,7 @@ const UndefinedRefExample: React.FC = () => {
 
   const setRef = () => {
     // Later, you might set the ref to point to an input field
-    undefinedRef.current = document.querySelector("input");
+    undefinedRef.current = document.querySelector("input")!;
     console.log("Updated undefined ref:", undefinedRef.current);
   };
 
