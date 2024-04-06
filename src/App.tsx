@@ -1,4 +1,4 @@
-import Parent from "./Tasks/03-advance-props-concept/08-partial-autocomplete.solution";
+import Parent from "./Tasks/03-advance-props-concept/11-prop-groups-with-variants.solution";
 
 const App = () => {
   return (
