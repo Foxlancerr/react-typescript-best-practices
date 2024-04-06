@@ -1,4 +1,4 @@
-import Parent from "./Tasks/02-hooks/11-useReducer.solution";
+import Parent from "./Tasks/03-advance-props-concept/03-discriminated-union-with-other-props.solution";
 
 const App = () => {
   return (
