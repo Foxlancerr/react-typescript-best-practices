@@ -1,4 +1,4 @@
-import Parent from "./Tasks/02-hooks/10-ref-readonly";
+import Parent from "./Tasks/02-hooks/11-useReducer.solution";
 
 const App = () => {
   return (
