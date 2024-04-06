@@ -1,4 +1,4 @@
-import Parent from "./Tasks/03-advance-props-concept/03-discriminated-union-with-other-props.solution";
+import Parent from "./Tasks/03-advance-props-concept/08-partial-autocomplete.solution";
 
 const App = () => {
   return (
