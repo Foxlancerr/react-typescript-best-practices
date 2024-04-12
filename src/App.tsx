@@ -1,4 +1,4 @@
-import Parent from "./Tasks/04-generics-concepts/07-generic-class-components.solution";
+import Parent from "./Tasks/04-generics-concepts/09-generic-inference-through-multiple-helpers.solution";
 
 const App = () => {
   return (
