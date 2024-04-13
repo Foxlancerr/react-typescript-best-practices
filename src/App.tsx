@@ -1,4 +1,4 @@
-import Parent from "./Tasks/04-generics-concepts/09-generic-inference-through-multiple-helpers.solution";
+import Parent from "./Tasks/06-deep-dive/01-understand-react-namespace-export.solution";
 
 const App = () => {
   return (
