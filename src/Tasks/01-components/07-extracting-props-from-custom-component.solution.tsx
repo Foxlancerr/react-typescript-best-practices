@@ -1,8 +1,8 @@
 // Imagine NavBar is an external library!
 
 const NavBar = (props: {
-  title: string;
   links: string[];
+  title: string;
   children: React.ReactNode;
 }) => {
   return (
